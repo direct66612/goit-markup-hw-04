@@ -89,6 +89,7 @@ img {
 .header__menu-link {
   padding: 24px 0;
   display: block;
+  position: relative;
 }
 .header__menu-link {
   font-weight: 500;
@@ -122,7 +123,23 @@ img {
 }
 .solutions {
   padding: 188px 0;
-  background-color: #2e2f42;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/solutions-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.details__icon {
+  max-width: 264px;
+  border-radius: 4px;
+  background: #f4f4fd;
+  margin-bottom: 8px;
+  text-align: center;
+  padding: 24px 0;
 }
 .solutions__title {
   color: #fff;
@@ -217,8 +234,24 @@ img {
 .team__images-item:not(:last-child) {
   margin-right: 24px;
 }
+.team__images-item {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  transition-delay: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .team__images-box {
   padding: 32px 16px;
+}
+.team__images-icon {
+  margin-top: 8px;
+}
+.team__icon-list {
+  display: flex;
+  gap: 24px;
+}
+path {
+  fill: #000;
 }
 .team__images-title {
   font-weight: 500;
@@ -238,9 +271,47 @@ img {
   text-align: center;
   border-radius: 0 0 4px 4px;
 }
+.customers {
+  padding: 120px 0;
+}
+.customers-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  color: #2e2f42;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+.customers-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.customers-list-item {
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  padding: 16px 32px;
+}
 .footer {
   background-color: #2e2f42;
   padding: 100px 0;
+}
+.footer__inner {
+  display: flex;
+  gap: 120px;
+}
+.footer__social-list {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.footer__social-text {
+  margin-bottom: 16px;
+  font-weight: 500;
+  color: #fff;
 }
 .footer__logo {
   display: inline-block;
