@@ -173,6 +173,9 @@ img {
   bottom: -1px;
   left: 0;
 }
+.active.first::after {
+  left: -5px;
+}
 .header__menu-link:hover {
   color: #404bbf;
 }
